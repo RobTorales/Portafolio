@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>RoB Desarrollador Web</title>
+</head>
+
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header class="bg-primary">
+                <div class="contenido-header">
+                    <h1 class="text-secondary">RoB</h1>
+                    <nav id="nav" class="text-secondary">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://wa.me/2235452718?text=Hola%20desde%20mi%20página%20web" class="wsp cl-white"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/rob._.tor/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/roberto-torales-b2b922298/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
+
+
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion text-secondary">Sobre Mi</p>
+            <h2 class="text-white">Hola, Soy <span class="text-secondary">Roberto Torales</span> </h2>
+            <h3 class="text-white">Desarrollador Web</h3>
+            <p class="text-white">Tengo 19 años, hice cursos  en coderhouse de html,css y javascript, ademas de react y backend . Estoy buscando mi primer trabajo como desarrollador , este año empiezo la carrera de licenciatura en informatica y espero seguir aprendiendo </p>
+            <p class="text-white">Estoy emocionado por la oportunidad de seguir creciendo como profesional y contribuir con mis habilidades en el desarrollo web. ¡Gracias por visitar mi portafolio!</p>
+        </div>
+    </section>
+
+
+    <section id="servicios">
+        <h3 class="titulo-seccion text-secondary">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio border-secondary">
+                <span class="icono bg-primary"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <p>Puedo desarrollar y maquetar un sitio web con html y css, tambien utilizando framworks como Bootstrap. Utilizo Git y GitHub para alojar el repositorio para informar sobre los codigos, tengo conocimientos basicos de SASS y de SEO para mejorar su posicionamiento en los buscadores</p>
+            </div>
+            <div class="servicio border-secondary">
+                <span class="icono bg-primary"><i class="fa-brands fa-js"></i></i></span>
+                <h4>Porgramación Javascript</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Javascript</li>
+                    <li>AJAX</li>
+                    <li>SweetAlert</li>
+                </ul>
+                <p>Un sitio Web interactivo, que permita  agregar productos al carrito, filtrar productos por categorias, comunicacion con APIS, Utilizar AJAX para permitir a las aplicaciones web validar información específica en formularios antes de que los usuarios los envíen ,mostrar animaciones, calcular precios, juegos etc</p>
+            </div>
+            <div class="servicio border-secondary">
+                <span class="icono bg-primary"><i class="fa-brands fa-react"></i></i></span>
+                <h4> React</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Vite js</li>
+                    <li>Firebase</li>
+                    <li>JSX</li>
+                </ul>
+                <p>Desarrollare el front end de una tienda online con carrito de compras utilizando los componentes React y Firebase como servidor en la nube. Crer una experiencia de usuario amigable, con actualizaciones visuales instantáneas, y código escalable.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio border-secondary">
+                <span class="icono bg-primary"><i class="fa-solid fa-database"></i></span>
+                <h4>Backend</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>NodeJS</li>
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                </ul>
+                <p>Desarrollare aplicaciones modernas con Node.js y MongoDB. Programar en Javascript del lado del servidor aplicando técnicas asincrónicas. Usar Bases de datos NoSQL como MongoDB dominando la gestión de los datos en forma eficiente, ágil y con una gran facilidad de escalabilidad.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+
+            <div class="barra">
+                <div class="cl-secondary" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="cl-secondary" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Backend</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="cl-secondary" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>React</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="cl-secondary" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="portfolio">
+        <h3 class="titulo-seccion text-secondary">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://robtorales.github.io/Shiwu-restaurante/"><img src="img/shiwu.png" alt=""></a>
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Desarrollo Web con HTML y CSS</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://robtorales.github.io/Terminal-de-bebidas/"><img src="img/terminal-de-bebidas.png" alt=""></a>
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Desarrollo Web con HTML, CSS y JS</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://black-mdq.vercel.app/"><img src="img/black-mdq.png" alt=""></a>
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Ecommerce hecho con React</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://robtorales.github.io/Calculadora/"><img src="img/calculadora.png" alt=""></a>
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Calculadora hecha con HTML,CSS y JS</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://robtorales.github.io/Piedra-Papel-o-Tijera/"><img src="img/piedra papel o tijera.png" alt=""></a>
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Juego de piedra papel o tijera hecha con HTML,CSS y JS</p>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    
+    </section>
+
+
+    <footer class="bg-primary">
+        <p class="text-white">Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="https://wa.me/2235452718?text=Hola%20desde%20mi%20página%20web" class="wsp cl-white"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/rob._.tor/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/roberto-torales-b2b922298/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
